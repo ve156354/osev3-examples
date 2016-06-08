@@ -28,6 +28,8 @@ RUN yum install -y --enablerepo=centosplus \
 RUN yum -y update; yum clean all
 RUN yum -y install epel-release; yum clean all
 RUN yum -y install nodejs npm; yum clean all
+RUN yum -y install tsd; yum clean all
+RUN yum -y install bower; yum clean all
     
     
     
