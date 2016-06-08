@@ -24,9 +24,10 @@ RUN yum install -y --enablerepo=centosplus \
     mkdir -p /opt/s2i/destination && chmod -R a+rwX /opt/s2i/destination && \
     mkdir -p /opt/app-root/src && chmod -R a+rwX /opt/app-root/src
     
-    RUN yum install nodejs
-    
-    RUN npm install
+
+RUN yum -y update; yum clean all
+RUN yum -y install epel-release; yum clean all
+RUN yum -y install nodejs npm; yum clean all
     
     
     
