@@ -31,13 +31,12 @@ RUN yum install -y --enablerepo=centosplus \
 #RUN npm install bower 
 #RUN npm install tsd
   
-  RUN yum -y install epel-release; yum clean all && \
-  install nodejs npm; yum clean all && \  
-  npm install && \
-  npm install -g bower && \
-  npm install -g grunt-cli && \
-  npm install tsd && \
-  bower install --allow-root 
+RUN apt-get update && \
+    rm -rf node_modules && \
+    apt-get install -y npm install && \
+    npm install -g bower && \
+    npm install -g grunt-cli && \
+    bower install --allow-root
   
     
     
