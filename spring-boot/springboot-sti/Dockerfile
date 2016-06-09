@@ -25,12 +25,20 @@ RUN yum install -y --enablerepo=centosplus \
     mkdir -p /opt/app-root/src && chmod -R a+rwX /opt/app-root/src
     
 
-RUN yum -y update; yum clean all
-RUN yum -y install epel-release; yum clean all
-RUN yum -y install nodejs npm; yum clean all
-RUN npm install bower 
-RUN npm install tsd
-    
+#RUN yum -y update; yum clean all
+#RUN yum -y install epel-release; yum clean all
+#RUN yum -y install nodejs npm; yum clean all
+#RUN npm install bower 
+#RUN npm install tsd
+  
+  RUN yum -y install epel-release; yum clean all && \
+  install nodejs npm; yum clean all && \  
+  npm install && \
+  npm install -g bower && \
+  npm install -g grunt-cli && \
+  npm install tsd && \
+  bower install --allow-root 
+  
     
     
 
