@@ -29,7 +29,8 @@ RUN yum -y update; yum clean all
 RUN yum -y install epel-release; yum clean all
 RUN yum -y install nodejs npm; yum clean all
 RUN npm install -g  bower grunt-cli tsd
-RUN bower install --allow-root  
+
+#RUN bower install --allow-root  
 
 ENV PATH=/opt/maven/bin/:/opt/gradle/bin/:$PATH
 
