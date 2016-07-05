@@ -43,7 +43,7 @@
                "dockerStrategy": {
                   "from": {
                      "kind": "ImageStreamTag",
-                     "name": "rhel7:latest"
+                     "name": "centos:latest"
                   }
                }
             },
@@ -63,7 +63,7 @@
             "name": "centos"
          },
          "spec": {
-            "dockerImageRepository": "library/centos:centos7"
+            "dockerImageRepository": "library/centos:7.2.1511"
          }
       },
       {
