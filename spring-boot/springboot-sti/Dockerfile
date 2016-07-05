@@ -1,5 +1,6 @@
 # springboot-sti
-FROM openshift/base-centos7
+#FROM openshift/base-centos7
+FROM rhel7.2
 MAINTAINER Veerendra Akula <veerendra.aakula>
 
 # Install build tools on top of base image
