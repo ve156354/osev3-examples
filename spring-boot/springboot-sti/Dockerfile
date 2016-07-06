@@ -1,5 +1,4 @@
 # springboot-sti
-#FROM openshift/base-centos7
 FROM rhel7.2
 MAINTAINER Veerendra Akula <veerendra.aakula>
 
@@ -19,7 +18,7 @@ RUN yum install -y --enablerepo rhel-7-server-optional-rpms \
     mkdir -p /opt/s2i/destination && chmod -R a+rwX /opt/s2i/destination && \
     mkdir -p /opt/app-root/src && chmod -R a+rwX /opt/app-root/src
     
-ENV PATH=/opt/maven/bin/:/opt/gradle/bin/:$PATH
+ENV PATH=/opt/maven/bin/:$PATH
 
 
 ENV BUILDER_VERSION 1.0
