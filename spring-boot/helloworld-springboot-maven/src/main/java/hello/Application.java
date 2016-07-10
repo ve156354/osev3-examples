@@ -19,9 +19,9 @@ public class Application {
 	public String home() {
 		//return "Hello Docker / Openshift World.";
 		return "Hello Docker / Openshift World." + "database_db2_dbUrl: " + env.getProperty("database_db2_dbUrl")  
-		       + " database_db2_dbPassword: " + env.getProperty("database_db2_dbPassword")  + " database_db2_dbPassword1: " 
-			   + env.getProperty("database_db2_dbPassword1") + " database_db2_dbPassword2: " + env.getProperty("database_db2_dbPassword2")
-			   + " db2name: " + env.getProperty("db2name");
+		       + " \n database_db2_dbPassword: " + env.getProperty("database_db2_dbPassword")  + " \n database_db2_dbPassword1: " 
+			   + env.getProperty("database_db2_dbPassword1") + " \n database_db2_dbPassword2: " + env.getProperty("database_db2_dbPassword2")
+			   + " \n db2name: " + env.getProperty("db2name");
 	}
 
 
