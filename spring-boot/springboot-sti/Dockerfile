@@ -34,9 +34,6 @@ LABEL io.k8s.description="Platform for building Spring Boot applications with ma
 
 LABEL io.openshift.s2i.scripts-url=image:///usr/local/sti
 
-ADD ./save-artifacts /usr/bin/save-artifacts
-RUN chmod a+rx /usr/bin/{prepare,run,save-artifacts}
-
 COPY ./.sti/bin/ /usr/local/sti
 
 RUN chown -R 1001:1001 /opt/openshift
