@@ -18,12 +18,12 @@ public class Application {
 	@RequestMapping("/")
 	public String home() {
 		
-		//return "Hello Docker / Openshift World.";
+		return "Hello Docker / Openshift World....";
 		
 		
-		return "Hello Docker / Openshift World !!! \n" + " \n db2url: " + env.getProperty("db2url")  
-		       + " \n mysqlurl: " + env.getProperty("mysqlurl")  + " \n myconfigkey: " 
-			   + env.getProperty("myconfigkey");
+		//return "Hello Docker / Openshift World !!! \n" + " \n db2url: " + env.getProperty("db2url")  
+		//	       + " \n mysqlurl: " + env.getProperty("mysqlurl")  + " \n myconfigkey: " 
+		//	   + env.getProperty("myconfigkey");
 	}
 
 
