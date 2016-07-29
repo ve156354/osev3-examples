@@ -18,7 +18,7 @@ public class Application {
 	@RequestMapping("/")
 	public String home() {
 		
-		return "Hello Docker / Openshift World....";
+		return "Hello Docker / Openshift World from local env....";
 		
 		
 		//return "Hello Docker / Openshift World !!! \n" + " \n db2url: " + env.getProperty("db2url")  
